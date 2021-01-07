@@ -5,8 +5,8 @@
 let al_0001_title = "Kotlin으로 Stack 구현하기"
 let al_0001_date = "2020. 10. 10"
 
-let al_0002_title = "Kotlin으로 Queue 구현하기"
-let al_0002_date = "2020. 10. 11"
+let al_0002_title = "시간복잡도와 BIG_O 표기법"
+let al_0002_date = "2020. 12. 07"
 
 // boj 0002 까지
 
@@ -39,8 +39,8 @@ let com_0001_date = "2020. 10. 17"
 
 // ============================================= //
 
-let al_new_title = al_0001_title
-let al_new_date = al_0001_date
+let al_new_title = al_0002_title
+let al_new_date = al_0002_date
 
 let boj_new_title = boj_0001_title
 let boj_new_date = boj_0001_date
