@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<head>
+<title>Algorithm</title>
+
+<link rel="stylesheet" href="https://leeeharam.github.io/index.css" type="text/css">
+<link rel="shortcut icon" href="refav.ico" type="image/x-icon">
+<link rel="icon" href="https://leeeharam.github.io/refav.ico" type="image/x-icon">
+<script type="text/javascript" src="https://leeeharam.github.io/date.js"></script>
+<script type="text/javascript" src="https://leeeharam.github.io/upload.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="container">
+                <li id="nav_item", class="Haram"> <Strong><a href="https://leeeharam.github.io/index.html"> To Home </a></Strong> </li>
+                <li id="nav_item"></li>
+                <li id="nav_item", class="None_Haram"> <a href="https://leeeharam.github.io/algorithm.html"> ALGORITHM </a> </li>
+                <li id="nav_item", class="None_Haram"> <a href="https://leeeharam.github.io/boj.html"> BOJ </a> </li>
+                <li id="nav_item", class="None_Haram"> <a href="https://leeeharam.github.io/ios.html"> iOS </a> </li>
+                <li id="nav_item", class="None_Haram"> <a href="https://leeeharam.github.io/frontend.html"> FRONT-END </a> </li>
+                <li id="nav_item", class="None_Haram"> <a href="https://leeeharam.github.io/computer.html"> COMPUTER </a> </li>
+                <li id="nav_item"></li>
+                <li id="nav_item", class="Haram"> <Strong><a href="https://leeeharam.github.io/setting.html"> All Setting </a></Strong> </li>
+            </ul>
+        </nav>
+    </header>   
+
+    <section id="tabs">
+
+        <br>
+
+        <div class="tm">
+            <h1 id="mains"><script>document.write(al_0002_title)</script><br>
+            <span id="dates"><script>document.write(al_0002_date)</script></span></h1>
+
+            <div id="posts_main">
+                <p id="post1">
+                    점근적 실행시간이란, 입력값 N이 커질 때, 그러니까 입력값이 무한대를 향할 때 함수의 실행시간 추이를 말한다. 점근적 실행시간을 시간복잡도라고도 하는데, 이 시간복잡도를 표기하는 방법중 하나가 상한을 의미하는 big - O다.
+                </p>
+                <p id="post1">
+                    대부분의 경우 실행시간과 메모리 용량은 반비례하지만 그렇지 않은 알고리즘의 경우가 드물지만 몇 있다. 이는 알고리즘의 주요한 특징 중 하나다.
+                </p>
+                <p id="code1"><strong>
+                    O(1), 상수형태
+                </p></strong>
+                <p id="post1">
+                    입력값이 아무리 커도 실행시간이 일정하다. 가장 이상적인 알고리즘이며 이런 알고리즘은 만들기 어려운 정도가 아니라 거의 불가능에 가깝다. 해시 테이블의 조회나 삽입같은 경우가 해당한다.
+                </p>
+                <p id="code1"><strong>
+                    O(log n), 로그형태
+                </p></strong>
+                <p id="post1">
+                    실행시간이 입력값에 영향을 받지만, 그래도 웬만한 입력값에는 크게 영향을 받지 않는다. 이진 검색이 여기 해당한다.
+                </p>
+                <p id="code1"><strong>
+                    O(n), 선형형태
+                </p></strong>
+                <p id="post1">
+                    입력값만큼 실행시간에 크게 영향을 받는다. 알고리즘을 수행하는데 걸리는 시간은 입력값에 비례한다. 이런 시간복잡도를 갖는 알고리즘을 선형시간 알고리즘이라고 한다. 보통 모든 입력값을 한번 이상 살펴보는 과정이 있다. 예를 들어서 친구 집인 103동에 도착했는데 알고 있는 정보가 고작 103동뿐이라면 최악의 경우 모든 호를 다 뒤져야 할 것이다. 이런 경우가 여기 해당된다.
+                </p>
+                <p id="code1"><strong>
+                    O(n log n), 선형 로그형태
+                </p></strong>
+                <p id="post1">
+                    효율 좋은 알고리즘들이 여기 해당된다. 모든 수를 한번 이상 비교해야하는 비교기반 정렬 알고리즘은 아무리 좋은 알고리즘이라도 이것보다 빠를 수 없다. 퀵정렬, 병합정렬, 힙정렬들이 이런 시간복잡도를 가진다.
+                </p>
+                <p id="code1"><strong>
+                    O(n^2), O(n^3), 다차형태
+                </p></strong>
+                <p id="post1">
+                    버블정렬같은 비효율적인 정렬 알고리즘이 여기 속한다. 선형형태 시간복잡도의 경우는 친구가 어디 사는지 동은 알았는데, 만약 몇동인지도 모른다 하면 그 단지를 다 뒤져야 할 것이다. 이런 경우가 (동수) X (호수)이며, O(n^2)에 속한다. 심지어 친구가 몇단지인지도 모른다면 그 아파트, 그 마을 전체를 다 뒤져야 할 것이다. 이런 경우가 (단지 수) X (동수) X (호수)가 되어 O(n^3)에 속한다.
+                <p id="code1"><strong>
+                    O(2^n), 지수형태
+                </p></strong>
+                <p id="post1">
+                    각 도시를 방문하고 돌아오는 외판원 문제를 모든 경우를 검사하는 브루트포스로 풀 때 등이 해당된다. n이 늘어남에 따라 급격하게 증가한다. n이 16이라고 쳤을 때, 상수형태는 1, 선형 형태는 16이고 지수형태도 65536에 해당하는 반면에 팩토리얼 형태는 무려 20922789888000이다.
+                <p id="code1"><strong>
+                    O(n!), 팩토리얼 형태
+                </p></strong>
+                <p id="post1">
+                    입력값이 아무리 커도 실행시간이 일정하다. 가장 이상적인 알고리즘이며 이런 알고리즘은 만들기 어려운 정도가 아니라 거의 불가능에 가깝다. 해시 테이블의 조회나 삽입같은 경우가 해당한다.
+                </p>
+
+                <p id="post1">
+                    최악의 경우가 있다. 퀵정렬 문제에서, 입력이 [1, 2, 3, 4, 5, 6, 7]으로 주어졌을 때랑 [1, 4, 3, 7, 8, 6, 5]로 주어졌을 때랑 다를 것이다. 일반적인 상식과 다르지만 [1, 2, 3, 4, 5, 6, 7]로 주어진 경우는 최악의 경우이다. 이런 경우 48번의 연산을 수행 할 것이다. 하지만 위에 같이 적은 최선의 경우는 고작 18번만 연산을 하면 된다.
+                </p>
+                <p id="post1">
+                    시간복잡도는 '최악'을 의미하지 않는다. '상한'을 의미한다. 꼬불꼬불한 복잡한 함수 f(n)이 있을 경우 이 함수의 실행 상한을 빅오라고 하는것이고, 실행 하한을 빅오메가라고 하는 것이다. 평균은 빅세타라고 칭한다. 입력의 경우가 어떻든, 가장 빨리 실행될 때와 가장 느리게 실행될 때를 칭하는 것이다.
+                </p>
+
+            </div>
+
+        </div>
+
+        <h1 id="backto", OnClick="location.href ='https://leeeharam.github.io/algorithm.html'"
+        id="posts", class=tbs, style="cursor:pointer;">◀︎ BACK</h1>
+
+        <div class="last">
+            <br><br><br><br>
+            <h4>개발자<span class="last2">&nbsp; 이하람</span></h4>
+            <h4>경로<span class="last2">&nbsp; leeeharam.github.io/index.html</span></h4>
+            <h4>문의사항<span class="last2">&nbsp; slyram06@naver.com</span></h4><br>
+            <h4>CC BY-NC-SA 2.0 KR</h4>
+            <h4>All of posts which in this site can't use to profit.</h4>
+            <h4>Copyright © leeeharam All rights reserved.</h4><br>
+            <a href="https://blog.naver.com/slyram06"><img src="https://clova-phinf.pstatic.net/MjAxODAzMjlfOTIg/MDAxNTIyMjg3MzM3OTAy.WkiZikYhauL1hnpLWmCUBJvKjr6xnkmzP99rZPFXVwgg.mNH66A47eL0Mf8G34mPlwBFKP0nZBf2ZJn5D4Rvs8Vwg.PNG/image.png", title="Blog_Naver", width="25px"></a>&nbsp;
+            <a href="https://github.com/leeeharam"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4gVsVcz1MiFOb7BqOD52cq8zVKKwkU88WxQ&usqp=CAU", width="25px", title="github_account"></a>&nbsp;
+            <a href="https://www.instagram.com/leehaaraam/"><img src="https://w7.pngwing.com/pngs/16/46/png-transparent-made-in-kings-heath-instagram-facebook-female-graphy-instagram-logo-instagram-icon-text-trademark-magenta.png", width="25px", title="instagram"></a>
+            <br><br><br><br><br>
+        </div>
+    </section>
+
+
+</body>
