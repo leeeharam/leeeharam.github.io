@@ -1,0 +1,142 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+head, body {
+    font-family: 'NanumSquare', sans-serif;
+}
+
+.last {
+    border: 1px white;
+    margin: 30px;
+    font-size: 13px;
+    text-align: center;
+    color:gray;
+}
+.last2 {
+    text-align: center;
+    color: #191919;
+}
+body {
+    margin: 0;
+}
+.container {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #707070;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+a:link, a:visited {
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+}
+#posts {
+    color: black;
+}
+#nav_item {
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: 6px solid #707070;
+    border-bottom: 6px solid #707070;
+}
+.None_Haram:hover {
+    background-color: gray;
+    color: black;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+.container, #nav_item {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+.tm {
+    text-align: center;
+}
+#tabs {
+    padding-top: 50px;
+}
+#haramlee {
+    border: 1px solid white;
+    margin-top: 100px;
+}
+#posts {    
+    border: 1px solid rgb(185, 185, 185);
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+#mains {
+    font-size: 60px;
+    padding: 30px;
+}
+#dates {
+    color: gray;
+    font-size: 20px;
+}
+#titles {
+    font-size: 30px;
+}
+#navbars {
+    border: 1px solid rgb(185, 185, 185);
+    padding: 15px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid white;
+}
+#posts_main {
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(244, 244, 244);
+    border-radius: 30px 30px 30px 30px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin-left: 350px;
+    margin-right: 350px;
+    text-align: left;
+}
+#post1 {
+    font-size: 18px;
+    line-height: 1.75;
+    text-indent: 1.25em;
+}
+#code1 {
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(75, 138, 197);
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.75;
+    letter-spacing: 0.75px;
+}
+#backto {
+    font-size: 35px;
+    border: 0.1px solid white;
+    color:rgb(185, 185, 185);
+    margin: 80px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 400px;
+    margin-right: 700px;
+}
