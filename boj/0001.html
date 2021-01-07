@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<head>
+<title>Algorithm</title>
+
+<link rel="stylesheet" href="https://leeeharam.github.io/index.css" type="text/css">
+<link rel="shortcut icon" href="refav.ico" type="image/x-icon">
+<link rel="icon" href="https://leeeharam.github.io/refav.ico" type="image/x-icon">
+<script type="text/javascript" src="https://leeeharam.github.io/date.js"></script>
+<script type="text/javascript" src="https://leeeharam.github.io/upload.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="container">
+                <li id="nav_item", class="Haram"> <Strong><a href="https://leeeharam.github.io/index.html"> To Home </a></Strong> </li>
+                <li id="nav_item"></li>
+                <li id="nav_item", class="None_Haram"> <a href="https://leeeharam.github.io/algorithm.html"> ALGORITHM </a> </li>
+                <li id="nav_item", class="None_Haram"> <a href="https://leeeharam.github.io/boj.html"> BOJ </a> </li>
+                <li id="nav_item", class="None_Haram"> <a href="https://leeeharam.github.io/ios.html"> iOS </a> </li>
+                <li id="nav_item", class="None_Haram"> <a href="https://leeeharam.github.io/frontend.html"> FRONT-END </a> </li>
+                <li id="nav_item", class="None_Haram"> <a href="https://leeeharam.github.io/computer.html"> COMPUTER </a> </li>
+                <li id="nav_item"></li>
+                <li id="nav_item", class="Haram"> <Strong><a href="https://leeeharam.github.io/setting.html"> All Setting </a></Strong> </li>
+            </ul>
+        </nav>
+    </header>   
+
+    <section id="tabs">
+
+        <br>
+
+        <div class="tm">
+            <h1 id="mains"><script>document.write(boj_0001_title)</script><br>
+            <span id="dates"><script>document.write(boj_0001_date)</script></span></h1>
+
+            <div id="posts_main">
+                <h1><strong>처음으로 풀어본 알고리즘 문제. 나중에 코드 수정하자</strong></h1>
+                <p id="post1">
+                    와 되게 쉬운 문제가 선린에 나왔네? 라고 생각했는데, 결코 쉽지는 않았다. 그렇다고 고난도의 코드를 사용하거나 엄청난 알고리즘 지식을 써야하는 문제도 아니라 골치가 더 아팠다. </p>
+                <p id="post1">
+                    이게 문제가 상당히 까다롭다. N - 1까지는 알겠는데 1병 남았으면 bottles 대신 bottle을 써야한다. if문 써서 1병이면 bottle로 바꾸면 되는거 아니야? 라고 생각 할 수 있겠지만 N -1에도 똑같이 적용을 해야하는데,
+                </p>
+                <p id="code1"><strong>
+                    if (N - 1 == 1)
+                </p></strong>
+                <p id="post1">
+                    이걸로 해버리면 오류가 생겨버린다. 그래서 N이 1이면 그냥 정해진 값을 출력하는걸로 바꿨다. 그리고 no more로 바꾸는 부분에서도 정상적으로 되지 않아서 else로 다시 정해진 값을 출력했다. 근데 사실 저 부분 때문에 어차피 따로 만들어야 했다.
+                </p>
+                <p id="code1"><strong>
+                    Go to the store and buy some more
+                </p></strong>
+                <p id="post1">
+                    계속 가다가 마지막에는 또 다르다;; 멍청하게 저걸 못 찾아서 저걸로만 10분 넘게 애를 먹었다. 입력값을 다시 변수에 넣어주는 작업도 필요했다.
+                </p>
+                <p id="code1"><strong>
+                    var K2: String = K
+                </p></strong>
+                <p id="post1">
+                    bottles의 "s" 자리에 변수를 넣어 기본값을 s로 설정해주고, K가 1이면 ""를 넣어 s가 붙지 않게 해주었다.
+                </p>
+                <p id="code1"><strong>
+                    if ((K.toInt() - 1) == 1) { S = "" }
+                </p></strong>
+                <p id="post1">
+                    그런데 이 부분은 if문 안의 부분이라 작동이 뭔가 안됐다. 그래서 S를 다시 선언 해 주었다.
+                </p>
+
+                <p id="code1"><strong>
+                    else {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;println("No more bottles of beer on the wall, no more bottles of beer.")<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("Go to the store and buy some more,")<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;println(" ${K2} bottle${S2} of beer on the wall.")<br>
+                    }
+                </p></strong>
+                <p id="post1">
+                    전체 코드
+                </p>
+
+                <p id="code1"><strong>
+                    import java.io.BufferedReader<br>
+                    import java.io.InputStreamReader<br>
+
+                    fun main(args: Array<String>) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;var br = BufferedReader(InputStreamReader(System.`in`))<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;var K: String = br.readLine()<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;var K2: String = K<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;var S: String = "s"<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;var S2: String = "s"<br><br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;for (i: Int in 1 .. K.toInt() + 1) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;if (K.toInt() == 1) { S = "" }<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;if (K2.toInt() == 1) { S2 = "" }<br><br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;if (K.toInt() > 0){<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("${K.toInt()} bottle${S} of beer on the wall,")<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println(" ${K.toInt()} bottle${S} of beer.")<br><br>
+
+                                &nbsp;&nbsp;&nbsp;&nbsp;if (K.toInt() > 1) {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;if ((K.toInt() - 1) == 1) { S = "" }<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Take one down and pass it around,")<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println(" ${K.toInt() - 1} bottle${S} of beer on the wall.")<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;else {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Take one down and pass it around,")<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println(" no more bottles of beer on the wall.")<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+
+                                        &nbsp;&nbsp;&nbsp;&nbsp;println()<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+
+                                        &nbsp;&nbsp;&nbsp;&nbsp;else {<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println("No more bottles of beer on the wall, no more bottles of beer.")<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Go to the store and buy some more,")<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println(" ${K2} bottle${S2} of beer on the wall.")<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+
+                                            &nbsp;&nbsp;&nbsp;&nbsp;K = (K.toInt() - 1).toString()<br>
+
+                                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+
+                    }
+                </p></strong>
+
+            </div>
+
+        </div>
+
+        <h1 id="backto", OnClick="location.href ='https://leeeharam.github.io/boj.html'"
+        id="posts", class=tbs, style="cursor:pointer;">◀︎ BACK</h1>
+
+        <div class="last">
+            <br><br><br><br>
+            <h4>개발자<span class="last2">&nbsp; 이하람</span></h4>
+            <h4>경로<span class="last2">&nbsp; leeeharam.github.io/index.html</span></h4>
+            <h4>문의사항<span class="last2">&nbsp; slyram06@naver.com</span></h4><br>
+            <h4>CC BY-NC-SA 2.0 KR</h4>
+            <h4>All of posts which in this site can't use to profit.</h4>
+            <h4>Copyright © leeeharam All rights reserved.</h4><br>
+            <a href="https://blog.naver.com/slyram06"><img src="https://clova-phinf.pstatic.net/MjAxODAzMjlfOTIg/MDAxNTIyMjg3MzM3OTAy.WkiZikYhauL1hnpLWmCUBJvKjr6xnkmzP99rZPFXVwgg.mNH66A47eL0Mf8G34mPlwBFKP0nZBf2ZJn5D4Rvs8Vwg.PNG/image.png", title="Blog_Naver", width="25px"></a>&nbsp;
+            <a href="https://github.com/leeeharam"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4gVsVcz1MiFOb7BqOD52cq8zVKKwkU88WxQ&usqp=CAU", width="25px", title="github_account"></a>&nbsp;
+            <a href="https://www.instagram.com/leehaaraam/"><img src="https://w7.pngwing.com/pngs/16/46/png-transparent-made-in-kings-heath-instagram-facebook-female-graphy-instagram-logo-instagram-icon-text-trademark-magenta.png", width="25px", title="instagram"></a>
+            <br><br><br><br><br>
+        </div>
+    </section>
+
+
+</body>
