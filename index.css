@@ -33,7 +33,6 @@ body {
 a:link, a:visited {
     text-decoration: none;
     text-align: center;
-    font-size: 17px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
@@ -143,3 +142,30 @@ a:link, a:visited {
 .already {
     color:rgb(185, 185, 185)
 }
+@media ( max-width: 1380px ) {
+    #navbars, #posts, #posts_main{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    #nav_item, .None_Haram {
+        font-size: 14px
+    }
+  }
+@media ( max-width: 1160px ) {
+    #navbars, #posts, #posts_main{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    #nav_item, .None_Haram {
+        font-size: 12px
+    }
+}
+@media ( max-width: 1000px ) {
+    #navbars, #posts, #posts_main{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #nav_item, .None_Haram {
+        color: gray;
+    }
+  }
