@@ -78,8 +78,8 @@ a:link, a:visited {
 }
 #posts {    
     border: 1px solid rgb(185, 185, 185);
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 20%;
+    margin-right: 20%;
     padding: 30px;
     margin-bottom: 50px;
 }
@@ -97,8 +97,8 @@ a:link, a:visited {
 #navbars {
     border: 1px solid rgb(185, 185, 185);
     padding: 15px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 0px;
     border-bottom: 1px solid white;
 }
@@ -110,8 +110,8 @@ a:link, a:visited {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: left;
 }
 #post1 {
@@ -137,9 +137,9 @@ a:link, a:visited {
     margin-bottom: 25px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-left: 400px;
-    margin-right: 700px;
+    margin-left: 20%;
+    margin-right: 60%;
 }
 .already {
-    color: gray
+    color:rgb(185, 185, 185)
 }
