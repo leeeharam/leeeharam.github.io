@@ -144,34 +144,54 @@ a:link, a:visited {
 }
 @media ( max-width: 1380px ) {
     #navbars, #posts, #posts_main{
-        margin-left: 200px;
-        margin-right: 200px;
+        margin-left: 150px;
+        margin-right: 150px;
     }
     #nav_item, .None_Haram {
-        font-size: 15px
+        font-size: 13px
     }
   }
-@media ( max-width: 1300px ) {
-    #navbars, #posts, #posts_main{
-        margin-left: 100px;
-        margin-right: 100px;
-    }
+@media ( max-width: 1228px ) {
     #nav_item, .None_Haram {
-        font-size: 12px
+        font-size: 11px
     }
 }
-@media ( max-width: 1150px ) {
-    #navbars, #posts, #posts_main{
-        margin-left: 0;
-        margin-right: 0;
-    }
+@media ( max-width: 1089px ) {
     #nav_item, .None_Haram {
-        font-size: 15px
+        font-size: 9px
     }
-    .container {
+}
+@media ( max-width: 1030px ) {
+    .None_Haram {
+        display: none;
+    }
+    #nav_item {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    /* .container {
         display: block;
     }
     #tabs {
         padding-top: 500px;
-    }
+    } */
   }
+@media ( max-width: 1100px ) {
+    #navbars, #posts, #posts_main{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+@media ( max-width: 1000px ) {
+    #navbars, #posts, #posts_main{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media ( max-width: 650px ) {
+    /* .Haram {
+        display: none;
+    } */
+    /* 새로운 메뉴 뜨게해서 display block 처리하기 */
+}
